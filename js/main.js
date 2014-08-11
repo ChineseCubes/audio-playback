@@ -1,17 +1,20 @@
 (function(){
-  var noop, playWith, $dropbox;
+  var noop, $body, playWith, $dropbox;
   noop = function(e){
     var x$;
     x$ = e;
     x$.preventDefault();
     x$.stopPropagation();
   };
+  $body = $('body');
   playWith = {
     audio: function($container, uri, rate){
-      var $audio, audio;
+      var $audio, x$, audio;
       $audio = $("<audio src=\"" + uri + "\" controls preload=\"auto\" autoplay=\"true\">");
-      $container.html($audio);
-      return audio = $audio.get()[0].playbackRate = 0.5;
+      $container.append($audio);
+      x$ = audio = $audio.get()[0];
+      x$.playbackRate = 0.5;
+      return x$;
     },
     howler: function($container, uri, rate){
       console.log('howler');
@@ -48,7 +51,7 @@
     var path;
     noop(e);
     path = 'assets/recording.mp3';
-    playWith['buzz']($dropbox, path, 0.5);
+    playWith['audio']($body, path, 0.5);
     return console.log('play');
   });
 }).call(this);

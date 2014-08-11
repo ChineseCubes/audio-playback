@@ -3,12 +3,14 @@ noop = !(e) ->
     ..preventDefault!
     ..stopPropagation!
 
+$body = $ \body
+
 play-with =
   audio: ($container, uri, rate) ->
     $audio = $ "<audio src=\"#uri\" controls preload=\"auto\" autoplay=\"true\">"
-    $container.html $audio
+    $container.append $audio
     audio = $audio.get!0
-      .playbackRate = 0.5
+      ..playbackRate = 0.5
   howler: ($container, uri, rate) ->
     console.log \howler
     play-with.howler.sound = new Howl do
@@ -39,5 +41,5 @@ $dropbox = $ \#dropbox
   .click (e) ->
     noop e
     path = 'assets/recording.mp3'
-    play-with['buzz'] $dropbox, path, 0.5
+    play-with['audio'] $body, path, 0.5
     console.log \play
