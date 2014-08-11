@@ -9,3 +9,6 @@ npm install
 npm start
 ```
 
+## Assets
+
+`assets/recording.mp3` is created by @caasi with [Otomata](http://www.earslap.com/page/otomata.html)
