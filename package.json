@@ -1,7 +1,7 @@
 {
-  "name": "jsl-seed",
-  "version": "0.0.3",
-  "description": "the seed for Jade, Stylus, LiveScript apps",
+  "name": "audio-playback",
+  "version": "0.0.1",
+  "description": "A prototype which plays audio at different speeds.",
   "main": "main.js",
   "scripts": {
     "start": "gulp",
@@ -10,7 +10,6 @@
   },
   "keywords": [],
   "author": "caasi Huang",
-  "license": "MIT",
   "devDependencies": {
     "LiveScript": "^1.2.0",
     "bower": "^1.3.8",
