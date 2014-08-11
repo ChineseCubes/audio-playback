@@ -1,7 +1,7 @@
 {
-  "name": "jsl-seed",
-  "version": "0.0.2",
-  "homepage": "https://github.com/caasi/jsl-seed",
+  "name": "audio-playback",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ChineseCubes/audio-playback",
   "authors": [
     "caasi Huang <caasi.igd@gmail.com>"
   ],
@@ -9,7 +9,6 @@
   "moduleType": [
     "globals"
   ],
-  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
