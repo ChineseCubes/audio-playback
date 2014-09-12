@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "homepage": "https://github.com/ChineseCubes/audio-playback",
   "authors": [
-    "caasi Huang <caasi.igd@gmail.com>"
+    "caasi Huang <caasi@chinesecubes.com>"
   ],
+  "license": "MIT",
   "main": "main.js",
   "moduleType": [
     "globals"
